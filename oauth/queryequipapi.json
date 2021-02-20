@@ -1,0 +1,21 @@
+{
+  "callback": {
+    "url": "http://view.ur-channel.com/dev-URC/callback",
+    "method": "post"
+  },
+  "query": {
+    "module": "Equipment_Lists",
+    "fields": [
+      "Site.Account_Name",
+      "Configuration",
+      "Player_Name",
+      "Item_Name",
+      "Name",
+      "Status",
+      "Orientation",
+      "Layout",
+      "Warranty_End_Date_calc"
+    ],
+    "page": 1
+  }
+}

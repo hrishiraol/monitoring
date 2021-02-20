@@ -1,0 +1,169 @@
+        
+
+        body{ 
+            font: 20px;
+            font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .displayContainer {
+            display: flex;              
+            flex-wrap: wrap;      
+            background-color:#ffffff;       
+            padding: 5px;
+            margin:3px;
+            max-width:1200px;      
+            margin-bottom: 50px;     
+        }
+        .displayRow {                        
+           
+            display: flex;            
+            flex-wrap: wrap;
+            padding: 5px;           
+        }
+
+        .displayRowHeader {
+            flex-direction: column;
+            min-width:1200px;
+            background-color:#acb4bb;                       
+            height:55px;
+            padding:5px;            
+            font-family: Verdana, sans-serif;
+            font-size: 1.2em;  
+        }
+
+        .displayRowCard {
+            display:flex;                   
+            flex-wrap: wrap;            
+            align-items: flex-start;       
+        }
+
+        .displayCard {
+            font-size: 0.900em;         
+            margin:3px;
+            padding: 1px;
+            min-height: 150px;  
+            background-color: rgba(64,64,64,0.2);
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.4);                
+        }
+
+        .accountName {
+            font-size:1.0em;
+            font-family: 'Times New Roman', Times, serif;
+            color:rgb(90, 87, 87);   
+            font-weight: bolder;   
+            display:block;
+        }
+
+        .accountDetails{
+            font-size:14px;
+            font-family: 'Times New Roman', Times, serif;
+            color:rgb(19, 17, 17);
+            display:block;  
+            margin-left:10px;                        
+        }
+
+        .accountStatus, .parentAccount {
+            font-size:14px;
+            font-family: 'Times New Roman', Times, serif;
+            color:rgb(19, 17, 17);    
+            margin:10px;                     
+        }            
+        
+        .hwrapper{             
+            align-items: left;
+                          
+                         
+        }
+        .hbanner {
+           
+            height: 50px;              
+            background-color:#35404e;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Times New Roman', Times, serif;
+            color:rgb(221, 221, 221);
+            line-height: 50px; /* To center Text vertically*/
+        }
+        .bwrapper{
+            background-color:White;                     
+            display:flex;
+            flex-wrap: wrap;
+            margin-left: 30px;
+
+            /*margin-right:auto;
+            margin-left:auto;*/
+        }
+        .fwrapper{
+            z-index: 2;
+            position: fixed;
+            width: 100%;
+            height: 32px;
+            bottom: 0%;
+            background-color:Black; 
+        }
+        .footer {
+            padding: 10px 0;
+            text-align: center;
+            line-height: normal;
+            margin: 0;
+            font-size: .9em;
+            width:1000px;
+            color:White;
+        }      
+
+        /* Welcome Page CSS*/
+        .container {
+            background-color: #dddddd;   
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card {
+            float: left;
+            width: 20%;
+            padding: 0 5px;
+            margin: 15px;
+            width:250px;
+            height: 120px;
+            background-color: #f1f1f1;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .topnav{
+            margin:auto;
+            text-align: left;
+            width:auto;
+
+        }   
+
+        .imgPortrait{                 
+            transform: rotate(90deg);  
+            padding: 48px;                         
+            margin:3px;   
+        }
+        .imgLandscape{
+            display:flex;
+            margin:3px;
+            padding:0px;
+        }
+
+        .displayPortrait.spanScreen {
+            transform: rotate(180deg);            
+        }
+
+        .imgCoffeeBarContainer {
+            flex-wrap: wrap;
+            width: 600px;
+            margin: auto;
+        }   
+
+        .cardHeader{       
+            font-weight: bold;
+            /*text-shadow:2px 2px 2px #001F3F;*/
+        }
+        .machineName, .dateUpdate {      
+            color: black;
+            font-weight: bold;         
+        } 

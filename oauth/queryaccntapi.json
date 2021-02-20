@@ -1,0 +1,26 @@
+{
+    "callback": {
+      "url": "http://view.ur-channel.com/dev-URC/callback",
+      "method": "post"
+    },
+    "query": {
+      "module": "Accounts",
+      "fields": [
+            "Account_Name",
+            "Store_Status",
+            "Parent_Account.Account_Name",
+            "Shipping_Street",
+            "Shipping_City",
+            "Shipping_State",
+            "Shipping_Country",
+            "Location_Email",
+            "DMB_Active",
+            "Layout",
+            "Menu_Board_Configuration",
+            "Number_of_Menu_Panels",
+            "Menus_Orientation",
+            "Store_Time_Zone"
+        ],
+      "page": 1
+    }
+  }

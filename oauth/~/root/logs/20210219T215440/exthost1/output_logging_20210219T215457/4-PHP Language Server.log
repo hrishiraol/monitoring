@@ -1,0 +1,36 @@
+DEBUG     Checking PHPLS_ALLOW_XDEBUG
+DEBUG     The xdebug extension is not loaded
+
+[Info  - 9:54:57 p.m.] 14 files total
+[Info  - 9:54:57 p.m.] Indexing project for definitions and static references
+Parsing file:///var/www/html/monitoring/test.php
+Parsing file:///var/www/html/monitoring/getscreenconnect.php
+Parsing file:///var/www/html/monitoring/oauth/jquery.php
+Parsing file:///var/www/html/monitoring/oauth/oauthclient.php
+Parsing file:///var/www/html/monitoring/oauth/getzohodata.php
+Parsing file:///var/www/html/monitoring/oauth/RefreshToken.php
+Parsing file:///var/www/html/monitoring/oauth/createBulkAPI.php
+Parsing file:///var/www/html/monitoring/testfiles/array.php
+Parsing file:///var/www/html/monitoring/testfiles/mergedata.php
+Parsing file:///var/www/html/monitoring/csvworking.php
+Parsing file:///var/www/html/monitoring/monitorpage.php
+Parsing file:///var/www/html/monitoring/generateaccount.php
+Parsing file:///var/www/html/monitoring/dashboard.php
+Parsing file:///var/www/html/monitoring/testarray.php
+[Info  - 9:54:57 p.m.] Indexing project for dynamic references
+Parsing file:///var/www/html/monitoring/test.php
+Parsing file:///var/www/html/monitoring/getscreenconnect.php
+Parsing file:///var/www/html/monitoring/oauth/jquery.php
+Parsing file:///var/www/html/monitoring/oauth/oauthclient.php
+Parsing file:///var/www/html/monitoring/oauth/getzohodata.php
+Parsing file:///var/www/html/monitoring/oauth/RefreshToken.php
+Parsing file:///var/www/html/monitoring/oauth/createBulkAPI.php
+Parsing file:///var/www/html/monitoring/testfiles/array.php
+Parsing file:///var/www/html/monitoring/testfiles/mergedata.php
+Parsing file:///var/www/html/monitoring/csvworking.php
+Parsing file:///var/www/html/monitoring/monitorpage.php
+Parsing file:///var/www/html/monitoring/generateaccount.php
+Parsing file:///var/www/html/monitoring/dashboard.php
+Parsing file:///var/www/html/monitoring/testarray.php
+[Info  - 9:54:57 p.m.] 0 Packages
+[Info  - 9:54:57 p.m.] All 14 PHP files parsed in 0 seconds. 154 MiB allocated.
