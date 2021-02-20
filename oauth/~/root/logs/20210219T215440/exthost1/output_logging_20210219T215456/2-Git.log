@@ -45,3 +45,99 @@ Open repository: /var/www/html/monitoring
 > git remote --verbose
 > git config --get commit.template
 > git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git ls-files --stage -- /var/www/html/monitoring/oauth/oauthclient.php
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git cat-file -s d75d4168735fc70c374422bdba1c85271e3a3e74
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :oauth/oauthclient.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s 4ce40509e7aa0713eeae34c44b7096e0d45be42c
+> git show --textconv :oauth/RefreshToken.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/RefreshToken.php
+> git cat-file -s b912fb26e102074e752dff63a1af337b15002e88
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s 4ce40509e7aa0713eeae34c44b7096e0d45be42c
+> git show --textconv :oauth/RefreshToken.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/RefreshToken.php
+> git cat-file -s b912fb26e102074e752dff63a1af337b15002e88
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s 4ce40509e7aa0713eeae34c44b7096e0d45be42c
+> git show --textconv :oauth/RefreshToken.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/RefreshToken.php
+> git cat-file -s b912fb26e102074e752dff63a1af337b15002e88
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s 4ce40509e7aa0713eeae34c44b7096e0d45be42c
+> git show --textconv :oauth/RefreshToken.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/RefreshToken.php
+> git cat-file -s b912fb26e102074e752dff63a1af337b15002e88
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s 4ce40509e7aa0713eeae34c44b7096e0d45be42c
+> git show --textconv :oauth/RefreshToken.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/RefreshToken.php
+> git cat-file -s b912fb26e102074e752dff63a1af337b15002e88
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s 4ce40509e7aa0713eeae34c44b7096e0d45be42c
+> git show --textconv :oauth/RefreshToken.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/RefreshToken.php
+> git cat-file -s b912fb26e102074e752dff63a1af337b15002e88
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s 4ce40509e7aa0713eeae34c44b7096e0d45be42c
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :oauth/RefreshToken.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/RefreshToken.php
+> git cat-file -s b912fb26e102074e752dff63a1af337b15002e88
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s 4ce40509e7aa0713eeae34c44b7096e0d45be42c

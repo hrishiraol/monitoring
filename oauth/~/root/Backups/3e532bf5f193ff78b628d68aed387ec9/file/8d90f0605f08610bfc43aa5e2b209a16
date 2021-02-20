@@ -1,3 +1,4 @@
+file:///var/www/html/monitoring/oauth/getzohodata.php {"mtime":1613835244250,"ctime":1611377098043,"size":11681,"etag":"36g3pekm1c4p","orphaned":false}
 <html>
 <title>Bulk API - Oauth</title>
 <body>
@@ -50,8 +51,7 @@
                 ));
 
             $response = curl_exec($ch);
-            file_put_contents("zoho-authtoken.json", $response);
-            
+            file_put_contents("zoho-authtoken.json", $response);            
             echo "Token Refreshed: ".json_decode($response)->access_token;
 
             //var_dump($response); 
@@ -59,14 +59,6 @@
             //header("Location: getzohodata.php");  
         
         }
-
-
-
-
-
-
-
-
 
         function createBulkReport(){
 
