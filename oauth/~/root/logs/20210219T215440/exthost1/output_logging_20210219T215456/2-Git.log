@@ -162,3 +162,30 @@ Open repository: /var/www/html/monitoring
 > git show --textconv :open.csv
 > git ls-files --stage -- /var/www/html/monitoring/open.csv
 > git cat-file -s 5482ec2a119f365032c12c20e2ebdf3510900822
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :oauth/getzohodata.php
+> git ls-files --stage -- /var/www/html/monitoring/oauth/getzohodata.php
+> git cat-file -s bbfe4d5807f10f260a1d1e50cf44fc3379f1d114
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/local-branch refs/remotes/local-branch
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
