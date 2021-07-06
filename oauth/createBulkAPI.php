@@ -137,11 +137,7 @@
             $query = array();
             $query[]= $queryaccntapi;
             $query[]= $queryequipapi;
-
             
-
-
-
             $ch = curl_init();            
             $curl_options = array();
             $curl_options[CURLOPT_URL] = "https://www.zohoapis.com/crm/bulk/v2/read";

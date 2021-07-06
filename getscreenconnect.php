@@ -3,7 +3,13 @@
 
 
     function getScreenCSV(){
-        $url="http://hrishi:HRa095!@screens.ur-channel.com/Report.csv?ReportType=Session&GroupFields=Name&GroupFields=GuestInfoUpdateTime&GroupFields=GuestScreenshotContent&GroupFields=IsEnded&SelectFields=Count&Filter=NAME%20LIKE%20'%25'%0A%0A&AggregateFilter=&ItemLimit=10000";
+        $url="http://admin:RaduAdmin2020!@screens.ur-channel.com/Report.csv?ReportType=Session&GroupFields=Name&GroupFields=GuestInfoUpdateTime&GroupFields=GuestScreenshotContent&GroupFields=IsEnded&SelectFields=Count&Filter=NAME%20LIKE%20'%25'%0A%0A&AggregateFilter=&ItemLimit=10000";
+        $source = file_get_contents($url);
+        file_put_contents('screenconnect.csv', $source);
+    }
+
+    function getScreenCSV1(){
+        $url="https://Administrator:RaduAdmin2020@ur-channel.screenconnect.com/Report.csv?ReportType=Session&GroupFields=Name&GroupFields=GuestInfoUpdateTime&GroupFields=GuestScreenshotContent&GroupFields=IsEnded&SelectFields=Count&Filter=NAME%20LIKE%20'%25'%0A%0A&AggregateFilter=&ItemLimit=10000";
         $source = file_get_contents($url);
         file_put_contents('screenconnect.csv', $source);
     }
@@ -75,7 +81,7 @@
     }
 
     function printArray(){
-        //getScreenCSV();
+        getScreenCSV();
         $printArray = readScreenCSV();    
         foreach($printArray as $a){
             foreach($a as $v){

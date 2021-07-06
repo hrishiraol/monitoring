@@ -4,12 +4,33 @@
 <h1>Create Bulk Report</h1>
     
     <form action="" method="post">
+        <input type="submit" name="refreshToken" value="Refresh" /><br>
         <input type="submit" name="createBulkReport" value="Create" /><br>
         <input type="submit" name="checkBulkReport" value="Check" /><br>
         <input type="submit" name="downloadBulkReport" value="Download" /><br>        
     </form>
 
     <?php     
+
+    //echo checkForAccess();
+
+        /*
+            when the page loads, initaite first function - createBulkReport()
+                if access token is invalid
+                    then RenewalRefreshToken() && createBulkReport()
+            
+                wait for 30 sec to checkBulkReport()
+                    keep checking checkBulkReport every 30 sec till it returns status - completed
+            
+                
+                then downloadBulkReport() 
+
+
+            if 
+
+        */
+
+
 
         if(isset ($_POST['createBulkReport'])){  
             createBulkReport();    
@@ -21,6 +42,42 @@
 
         if(isset ($_POST['downloadBulkReport'])){
             downloadBulkReport();           
+        }
+        if(isset ($_POST['refreshToken'])){
+            RenewRefreshToken();           
+        }
+
+
+        function RenewRefreshToken(){
+
+            $readJson = file_get_contents("zohoauth.json");
+            $array = json_decode($readJson);
+    
+            $client_id = $array->client_id;
+            $client_secret = $array->client_secret;
+            $refresh_token = $array->refresh_token;
+
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "https://accounts.zoho.com/oauth/v2/token" );
+            curl_setopt($ch, CURLOPT_POST, TRUE);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, array(
+                'refresh_token' => $refresh_token,
+                'client_id' => $client_id,
+                'client_secret' => $client_secret,                
+                'grant_type' => 'refresh_token'
+                ));
+
+            $response = curl_exec($ch);
+            file_put_contents("zoho-authtoken.json", $response);
+            
+            echo "Token Refreshed: ".json_decode($response)->access_token;
+
+            //var_dump($response); 
+            //return json_decode($response)->access_token;  
+            //header("Location: getzohodata.php");  
+        
         }
 
         function createBulkReport(){
