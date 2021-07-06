@@ -1,8 +1,6 @@
 <?php
 
     //include "getscreenconnect.php";
-    
-    
 
     function accountArray($jsonPath){
         $json = file_get_contents($jsonPath);
@@ -72,13 +70,13 @@
                 $displayCard->appendChild($displayCardBody);
 
                     $link = $doc->createElement("a");
-                    $link->setAttribute("href","http://screens.ur-channel.com/Host#Access/All%20Machines/".$player_name);
+                    $link->setAttribute("href","https://ur-channel.screenconnect.com/Host#Access/All%20Machines/".$player_name); //link to open in screenconnect
                     $link->setAttribute("title",$player_name);
                     $link->setAttribute("target","_blank");
                     $displayCardBody->appendChild($link);
 
                         $himg = $doc->createElement("img");
-                        $himg->setAttribute("src","Thumbs/".$player_name.".jpg"); 
+                        $himg->setAttribute("src",getViewThumb($player_name)); // getView or getScreenConnect thumbnails
                         $himg->setAttribute("class", checkOrient($orientation)); //add check orientation method
                         $himg->setAttribute("title", $player_name);
                         $link->appendChild($himg);
@@ -111,6 +109,18 @@
         return $displayRowCard;
     }
 
+
+    //from View Server
+    function getViewThumb($player_name){
+        $path = "http://view.ur-channel.com/Thumbs/" . $player_name . ".jpg";
+        return $path;
+    }
+    //from ScreenConnect 
+    function getScreenConnectThumb($player_name){
+        $path = "Thumbs/" . $player_name . ".jpg";
+        return $path;
+    }
+
     function checkOrient($orient) {
         if($orient=="Portrait") {
             return "imgPortrait";						
@@ -133,6 +143,5 @@
             echo "<br>\n";
         }
     }
-
 
 ?>

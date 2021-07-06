@@ -41,6 +41,7 @@ $equipPath = "oauth/json/equiplist.json";
                 $displayContainer= $doc->createElement("div");
                 $displayContainer->setAttribute("class", "displayContainer");
                  
+                //On Page load
                 foreach ($accntDets as $key){                         
                         $displayRow=displayRow($doc, $key['Account_Name'], $key['Parent_Account.Account_Name'],$key['Shipping_City'],
                                     $key['Shipping_State'], $key['Shipping_Country'],
@@ -54,8 +55,7 @@ $equipPath = "oauth/json/equiplist.json";
                         }                
                     }               
                     $displayContainer->appendChild($displayRow);
-                }
-                
+                }                
                 echo $doc->saveHTML($displayContainer);  
 
                                 
