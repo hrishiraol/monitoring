@@ -2,6 +2,8 @@
 
     //include "getscreenconnect.php";
 
+
+    //converts json into array
     function accountArray($jsonPath){
         $json = file_get_contents($jsonPath);
         $jsonArray  = json_decode($json, true);        
