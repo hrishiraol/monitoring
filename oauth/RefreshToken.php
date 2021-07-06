@@ -5,11 +5,11 @@
 
 <?php
         $readJson = file_get_contents("zohoauth.json");
-        $array = json_decode($readJson);
+        $array = json_decode($readJson);       
 
-        $client_id = $array->client_id;
+        $client_id = $array->client_id;  
         $client_secret = $array->client_secret;
-        $refresh_token = $array->refresh_token;
+        $refresh_token = $array->refresh_token;  
 
         function RenewRefreshToken($rftkn,$clid,$clsec){
             
@@ -18,7 +18,7 @@
             curl_setopt($ch, CURLOPT_POST, TRUE);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, array(
+            curl_setopt($ch, CURLOPT_POSTFIELDS, array(   
                 'refresh_token' => $rftkn,
                 'client_id' => $clid,
                 'client_secret' => $clsec,                
@@ -34,6 +34,7 @@
         }
 
         RenewRefreshToken($refresh_token,$client_id,$client_secret);
+        
 ?>
 </body>
 </html>

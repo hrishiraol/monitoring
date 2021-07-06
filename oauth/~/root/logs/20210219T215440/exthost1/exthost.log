@@ -64,3 +64,5 @@
 [2021-02-20 10:42:50.338] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/json-language-features/client/dist/node/jsonClientMain
 [2021-02-20 10:42:50.370] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":false,"extensionId":{"value":"vscode.npm","_lower":"vscode.npm"},"activationEvent":"onLanguage:json"}
 [2021-02-20 10:42:50.370] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/npm/dist/npmMain
+[2021-02-20 11:40:50.788] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-02-20 11:40:51.814] [exthost] [info] exiting with code 0

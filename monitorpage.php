@@ -6,6 +6,7 @@
 
 $doc = new DOMDocument('1.0','utf-8');
 
+//path for the zoho json files
 $accountPath = "oauth/json/account.json";
 $equipPath = "oauth/json/equiplist.json";
 
@@ -33,6 +34,7 @@ $equipPath = "oauth/json/equiplist.json";
                 $statusOpen="Open";
                 $equipStatus="Installed";                
                
+                // Filtering arrays and adding player status
                 $accntDets = filterStoreStatus($accountPath,$statusOpen);
                 $equipDets = filterInstalled($equipPath, $equipStatus);
 
@@ -102,7 +104,7 @@ $equipPath = "oauth/json/equiplist.json";
                         return $printDate;
                     }
                 }
-        
+                // Online-Offline status 20 mins ago
                 function checkStatus($lastUpdate){
                     $last = strtotime($lastUpdate);
         
@@ -114,7 +116,7 @@ $equipPath = "oauth/json/equiplist.json";
                         return "Online";
                     }
                 }
-        
+                //converting base4 to jpg
                 function base64ToImage($base64_string, $output_file){
                     $file = fopen ($output_file, "wb");
                     $data = explode(',',$base64_string);
@@ -141,7 +143,7 @@ $equipPath = "oauth/json/equiplist.json";
                         return ($value1['Status']==$equipStatus);
                     });
                     
-                            //filter array with correct player name > 5 character lookup                            
+                        //filter array with correct player name > 5 character lookup                            
                     $playArray= array_filter($installArray, function($value2) {
                         return (strlen($value2['Player_Name'])>5);
                     });   

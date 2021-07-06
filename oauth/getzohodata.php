@@ -12,6 +12,26 @@
 
     <?php     
 
+    //echo checkForAccess();
+
+        /*
+            when the page loads, initaite first function - createBulkReport()
+                if access token is invalid
+                    then RenewalRefreshToken() && createBulkReport()
+            
+                wait for 30 sec to checkBulkReport()
+                    keep checking checkBulkReport every 30 sec till it returns status - completed
+            
+                
+                then downloadBulkReport() 
+
+
+            if 
+
+        */
+
+
+
         if(isset ($_POST['createBulkReport'])){  
             createBulkReport();    
         }
@@ -59,14 +79,6 @@
             //header("Location: getzohodata.php");  
         
         }
-
-
-
-
-
-
-
-
 
         function createBulkReport(){
 
